@@ -1,0 +1,14 @@
+﻿.pytest/
+venv/
+.idea/
+.pytest_cache/
+__pycache__/
+# открыли файл .gitignore в редакторе nano
+$ nano .gitignore
+
+# игнорировать файл file_name.txt
+file_name.txt
+
+# игнорировать все файлы с расширением .doc
+*.doc
+
