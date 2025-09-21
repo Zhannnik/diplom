@@ -26,6 +26,6 @@ FROM "Orders";
 ```
 ## <span style="background-color:mistyrose;">Автоматизация теста к API</span>
 Автоматизировать подготовленный сценарий.
-
+![Мой скриншот](images/screenshot.jpg)
 - Для запуска теста должны быть установлены пакеты pytest и requests
 - Запуск теста выполняется командой pytest
