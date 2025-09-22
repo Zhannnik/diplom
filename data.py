@@ -1,6 +1,5 @@
 # Жанна Моисеева, 34-я когорта — Финальный проект. Инженер по тестированию плюс
-headers = {"Content-Type": "application/json"}
-
+# Данные для создания заказа
 order_body = {
     "firstName": "Инна",  # Имя
     "lastName": "Иванова",  # Фамилия
@@ -12,5 +11,3 @@ order_body = {
     "comment": "Жду",  # Комментарий
     "color": ["BLACK"],  # Цвет
 }
-
-status_code_200 = 200

@@ -2,6 +2,7 @@
 ## <span style="background-color:mistyrose;">Работа с базой данных</span>
 **Задание 1**
 Вывести список логинов курьеров с количеством их заказов в статусе «В доставке».
+*Первый вариант решения:*
 ```
 SELECT
     c.login,
@@ -11,6 +12,18 @@ LEFT JOIN "Orders" AS o
     ON c.id = o."courierId"
 GROUP BY c.login;
 ```
+*Второй вариант решения:*
+```
+SELECT
+    c.login,
+    COUNT(o.id) AS "CountDelivery"
+FROM "Couriers" AS c
+LEFT JOIN "Orders" AS o
+    ON c.id = o."courierId"
+WHERE o."inDelivery" = true
+GROUP BY c.login;
+```
+
 **Задание 2**
 Вывести все трекеры заказов и их статусы по заданному правилу.
 ```
